@@ -9,15 +9,14 @@
 
 function palindromo(frase) {
 
-    let str = frase;
-    let replace = str.replace(/\W/g, "");
-    let splitted = replace.split("").reverse().join("");
+    frase = frase.replace(/\W/g, "");
+    let splitted = frase.split("").reverse().join("");
     
     
-    if(replace == splitted) {
-        return "TRUE";
+    if(frase == splitted) {
+        return true;
     }else {
-        return "FALSE";
+        return false;
     }
 }
 
